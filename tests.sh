@@ -14,10 +14,10 @@ test_output() {
   expected=$2
   if [[ "$output" == "$expected" ]]
   then
-    echo -e "[  ${GREEN}OK${NC}  ]: $1 => $2 ${GREEN}✔️${NC}"
+    echo -e "[  ${GREEN}OK${NC}  ]: $1 => $2 ${GREEN}✓${NC}"
     tests_passed=$((tests_passed + 1))
   else
-    echo -e "[ ${RED}Fail${NC} ]: Esperaba '$expected' pero se obtuvo '$output' ${RED}❌${NC}"
+    echo -e "[ ${RED}Fail${NC} ]: Esperaba '$expected' pero se obtuvo '$output' ${RED}✗${NC}"
   fi
 }
 test_output_ml() {
@@ -25,10 +25,10 @@ test_output_ml() {
   expected=$2
   if [[ "$output" == "$expected" ]]
   then
-    echo -e "[  ${GREEN}OK${NC}  ]: $1 ${GREEN}✔️${NC}"
+    echo -e "[  ${GREEN}OK${NC}  ]: $1 ${GREEN}✓${NC}"
     tests_passed=$((tests_passed + 1))
   else
-    echo -e "[ ${RED}Fail${NC} ]: $1 ${RED}❌${NC}"
+    echo -e "[ ${RED}Fail${NC} ]: $1 ${RED}✗${NC}"
   fi
 }
 # saludo

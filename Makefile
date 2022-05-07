@@ -1,4 +1,4 @@
-hola: saludo.c
+saludo: saludo.c
 	@gcc -o saludo saludo.c
 
 factorial: factorial.c
